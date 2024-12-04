@@ -1,15 +1,15 @@
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class main {
+public class App {
     public static void main(String[] args) {
         //Change the following text file to reference different days
-		var inputFilePath = "inputs\\02.txt";
+		var inputFilePath = "inputs\\03.txt";
 		var text = GetLines(inputFilePath);
         
         //Change the day class in the following two lines to run different days
-        System.out.println("Part 1: " + Day02.Part1(text));
-		System.out.println("Part 2: " + Day02.Part2(text));
+        System.out.println("Part 1: " + Day03.Part1(text));
+		System.out.println("Part 2: " + Day03.Part2(text));
     }
 
     //Returns all lines of a given text file as a list of strings
