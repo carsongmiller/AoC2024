@@ -1,15 +1,7 @@
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
-public class App {
-    public static void main(String[] args) {
-		var inputFilePath = "inputs\\01.txt";
-		var text = GetLines(inputFilePath);
-        System.out.println("Part 1: " + Part1(text));
-		System.out.println("Part 2: " + Part2(text));
-    }
-
+public class Day01 {
     public static int Part1(String text) {
         //First, split the lines into two lists: left and right
         var left = new ArrayList<Integer>();
@@ -54,16 +46,4 @@ public class App {
 
         return similarity;
 	}
-
-    //Returns all lines of a given text file as a list of strings
-    public static String GetLines(String filePath) {
-        //Create a list that we'll store all of our lines in
-        String text = "";
-        try {
-            text = new String(Files.readAllBytes(Paths.get(filePath)));
-        } catch (Exception e) {
-            //do nothing
-        }
-		return text;
-    }
 }
