@@ -1,18 +1,10 @@
-## Getting Started
+# Advent of Code Solutions - 2024
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repo contains my solutions for Advent of Code 2024.  All solution in this repo should work, although they're not necessarily neither super fast nor optimal in any way.  My goal was to get more familiar with Java, and so in these solutions, you will find straightforward solutions that are hopefully fairly readable and understandable.
 
-## Folder Structure
+## How to run
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Clone the repo, and replace all instances of "DayXX" in App.java with the number of the day you want.  You'll need to change the following lines (change the "08" to the day you want):
+- `var inputFilePath = "inputs\\08.txt";`
+- `System.out.println("Part 1: " + Day08.Part1(text));`
+- `System.out.println("Part 2: " + Day08.Part2(text));`
