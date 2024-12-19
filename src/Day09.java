@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import javax.imageio.stream.MemoryCacheImageInputStream;
 
 
 public class Day09 {
@@ -43,12 +42,10 @@ public class Day09 {
 
         //now sum up the results
         long sum = 0;
-        long sumLast = 0;
         int index = 0;
         for (var block : resultMemory) {
             for (int i = 0; i < block[1]; i++) {
                 sum += index++ * block[0];
-                sumLast = sum;
             }
         }
 
